@@ -1,2 +1,2 @@
-# Stock-market-analysis-and-forecasting
-Here i'm trying to analyse stock market and forecast the results
+# Project Title: Stock Market Analysis and Forecasting with LSTM
+This project delves into the world of stock market analysis and forecasting, employing Long Short-Term Memory (LSTM) networks—a type of deep learning model. Focused on five specific target companies, including Google (GOOGL), the analysis incorporates historical stock prices, financial indicators, and LSTM models to provide nuanced insights into stock trends. The repository contains code, datasets, and documentation, offering a comprehensive exploration of stock market dynamics and predictions.
