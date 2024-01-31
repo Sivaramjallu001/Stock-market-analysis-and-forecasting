@@ -1,7 +1,25 @@
 # 1. What are the  time series models
 # 2. Why we use LSTM 
-# 3. What is the problem with other models like KNN, Decision Trees, 
+# 3. What is the problem with other models like KNN, Decision Trees etc.,
 
-Time series models are statistical models designed to analyze and forecast data points collected over time. 
-These models consider the temporal order of the data points and are commonly used in various fields, including finance, economics, climate science, and more. 
-Here are some notable time series models:
+1.Time series models are statistical models designed to analyze and forecast data points collected over time. These models consider the temporal order of the data points and are commonly used in various fields,including finance, economics, climate science, and more. 
+  
+  Here are some notable time series models:
+  
+  i.Autoregressive Integrated Moving Average (ARIMA):
+     ARIMA is a popular linear model that combines autoregression (AR), differencing (I), and moving averages (MA).It's effective for stationary time series data.
+  
+  ii.Long Short-Term Memory (LSTM):
+      LSTM is a type of recurrent neural network (RNN) that is well-suited for processing and predicting time series data.It is effective in capturing long-term dependencies and is commonly used in deep learning-based time series forecasting.
+
+  iii.Seasonal AutoRegressive Integrated Moving Average with eXogenous factors (SARIMAX):
+       SARIMAX extends the capabilities of ARIMA by incorporating exogenous variables. It's useful for modeling time series data influenced by external factors.
+
+  iv.Prophet:
+       Developed by Facebook, Prophet is designed for forecasting time series data with daily observations that display patterns such as yearly, weekly, and daily seasonality. 
+
+   v.Seasonal-Trend decomposition using LOESS (STL):
+       STL decomposes time series into seasonal, trend, and remainder components. It is useful for handling data with strong seasonality.
+
+   vi.Exponential Smoothing State Space Models (ETS):
+        ETS models, including models like Holt-Winters, capture seasonality, trend, and error components. They are suitable for forecasting time series with different patterns.
