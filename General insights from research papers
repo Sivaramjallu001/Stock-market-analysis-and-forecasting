@@ -1,0 +1,7 @@
+# 1. What are the  time series models
+# 2. Why we use LSTM 
+# 3. What is the problem with other models like KNN, Decision Trees, 
+
+Time series models are statistical models designed to analyze and forecast data points collected over time. 
+These models consider the temporal order of the data points and are commonly used in various fields, including finance, economics, climate science, and more. 
+Here are some notable time series models:
