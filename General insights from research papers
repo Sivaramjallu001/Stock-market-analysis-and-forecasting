@@ -23,3 +23,14 @@
 
    vi.Exponential Smoothing State Space Models (ETS):
         ETS models, including models like Holt-Winters, capture seasonality, trend, and error components. They are suitable for forecasting time series with different patterns.
+
+
+
+
+
+
+
+
+
+
+However, many ML techniques poses uncertainty in results for stock market data as not all techniques can capture the long-term dependencies and unpredictable relationships.
