@@ -1,36 +1,76 @@
-# 1. What are the  time series models
-# 2. Why we use LSTM 
-# 3. What is the problem with other models like KNN, Decision Trees etc.,
+# 📈 Time Series Forecasting – Key Concepts
 
-1.Time series models are statistical models designed to analyze and forecast data points collected over time. These models consider the temporal order of the data points and are commonly used in various fields,including finance, economics, climate science, and more. 
-  
-  Here are some notable time series models:
-  
-  i.Autoregressive Integrated Moving Average (ARIMA):
-     ARIMA is a popular linear model that combines autoregression (AR), differencing (I), and moving averages (MA).It's effective for stationary time series data.
-  
-  ii.Long Short-Term Memory (LSTM):
-      LSTM is a type of recurrent neural network (RNN) that is well-suited for processing and predicting time series data.It is effective in capturing long-term dependencies and is commonly used in deep learning-based time series forecasting.
+## 1. What are Time Series Models?
 
-  iii.Seasonal AutoRegressive Integrated Moving Average with eXogenous factors (SARIMAX):
-       SARIMAX extends the capabilities of ARIMA by incorporating exogenous variables. It's useful for modeling time series data influenced by external factors.
+Time series models are designed to analyze and forecast data that is collected over time. These models take into account the *temporal order* of data points and are widely used in domains like finance, weather forecasting, economics, and more.
 
-  iv.Prophet:
-       Developed by Facebook, Prophet is designed for forecasting time series data with daily observations that display patterns such as yearly, weekly, and daily seasonality. 
+---
 
-   v.Seasonal-Trend decomposition using LOESS (STL):
-       STL decomposes time series into seasonal, trend, and remainder components. It is useful for handling data with strong seasonality.
+## 2. Common Time Series Models
 
-   vi.Exponential Smoothing State Space Models (ETS):
-        ETS models, including models like Holt-Winters, capture seasonality, trend, and error components. They are suitable for forecasting time series with different patterns.
+### i. ARIMA (AutoRegressive Integrated Moving Average)
+- A linear model that combines:
+  - **AR (Autoregression)**: Relationship between current and past values
+  - **I (Integrated)**: Differencing to make data stationary
+  - **MA (Moving Average)**: Relationship between residual errors
+- Best suited for **stationary** time series.
 
+---
 
+### ii. LSTM (Long Short-Term Memory)
+- A type of Recurrent Neural Network (RNN).
+- Remembers **long-term dependencies**, not just recent history.
+- Handles **non-linear**, noisy, and complex patterns in time-series.
+- Excellent for **stock prediction, NLP**, etc.
 
+---
 
+### iii. SARIMAX (Seasonal ARIMA with eXogenous factors)
+- Extends ARIMA by:
+  - Handling **seasonality**
+  - Including **external/exogenous features**
+- Ideal for data influenced by **external variables**.
 
+---
 
+### iv. Prophet (by Facebook)
+- Robust to missing data, trend shifts, and outliers.
+- Handles **yearly, weekly, and daily seasonality**.
+- Easy to use and tune.
+- Great for **business forecasting**.
 
+---
 
+### v. STL (Seasonal-Trend Decomposition using LOESS)
+- Decomposes data into:
+  - **Seasonal**
+  - **Trend**
+  - **Remainder**
+- Good for visual understanding and pre-processing.
 
+---
 
-However, many ML techniques poses uncertainty in results for stock market data as not all techniques can capture the long-term dependencies and unpredictable relationships.
+### vi. ETS (Error, Trend, Seasonality)
+- Includes **Holt-Winters** models.
+- Handles:
+  - **Additive/multiplicative seasonality**
+  - **Trend smoothing**
+  - **Error modeling**
+
+---
+
+## 3. Why LSTM over Traditional ML Models?
+
+### 🔍 Why not KNN, Decision Trees, etc.?
+- These models:
+  - Don't preserve **temporal order**
+  - Struggle with **sequence learning**
+  - Are not ideal for **long-term dependencies**
+- They work well for tabular data but **not sequential data**.
+
+### ✅ Why LSTM?
+- Designed for **sequential data**
+- Captures **context across time**
+- Learns patterns from **past values** to predict future ones
+- Ideal for **financial time series, weather, language, etc.**
+
